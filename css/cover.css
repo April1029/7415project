@@ -1,0 +1,41 @@
+main.inner{
+  width:50%;
+  margin:auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*
+ * Cover
+ */
+.cover-container {
+  background: url('http://image.thepaper.cn/wap/image/27/756/307.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  padding: 1 8rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 600;
+}
+
+.cover-heading{
+   font-family:"Pathway Gothic One", sans-serif;
+   font-weight: normal;
+   font-size: 66px;
+}
+
+p{
+  color: rgba(255, 255, 255, 0.5);
+ font-family: "Pathway Gothic One", sans-serif;
+ font-size: 16px;
+ letter-spacing: 1px;
+ margin: 10px 0 0 0;
+ font-weight: normal;
+}
+

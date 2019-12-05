@@ -8,7 +8,7 @@ $( document ).ready(function() {
          $(".parcours-active").removeClass("parcours-active");
          $(".parc1").addClass("parcours-active");
          $(".timeline-indicator").css("width","11.25%");
-         $("body").css("background","url(../image/1.jpeg)");
+         $("body").css("background","url(image/1.jpeg)");
          $("main h1").text("First step: materials preparing");
          $("main p").text("Celadon is compounded from violet-golden clay and a mixture of burnt feldspar, limestone, quartz and plant ash. All clay is transported down the mountain, the price of this material is not high, this is the natural resources of Longquan, the soil transported down the mountain can not be used in this way directly, they should go through cleaning, this cleaning process requires filtering out the impurities, in order to reduce the iron content in it, people have to use large magnets to absorb the particulate iron. In addition to clay, the main component is glaze. Different types of glazed celadon use different kinds of soil. The typical Longquan celadon glaze comes from purple gold soil, now pure purple gold soil is very few, each celadon manufacturer has their different glaze blending methods, so the glaze color is not exactly the same, they are all unique and special, actually from the glaze, you can tell which manufacturer it is. Glaze blending is an ancestral secret recipe, outsiders do not know, but one thing for sure, they will never add pigments, glaze color is produced in the original flame.");
 
@@ -21,7 +21,7 @@ $( document ).ready(function() {
          $(".parcours-active").removeClass("parcours-active");
          $(".parc2").addClass("parcours-active");
          $(".timeline-indicator").css("width","22.70%");
-         $("body").css("background","url(../image/2.jpg)");
+         $("body").css("background","url(image/2.jpg)");
          $("main h1").text("Second step: molding");
          $("main p").text("Kneading clay is the first process of molding, its method is to knead mud to a certain extent like face, so that it is convenient to draw billet. Specifically, before the billet is formed, the air in the soil should be rubbed away, if not, it will cause lots of problems in the later process and may even lead to a total failure. While rubbing off the bubbles, you can wash away the original memory of the soil, and finally knead the mud into a lump of mud that is uniform in dry, wet, soft and hard without cracks and faults.The next step is billet drawing and it is the process of drawing the mud into the designed shape by using the rotation of the pottery car and the hand force of the drawing machine on the pottery car; repairing the billet is the process of leveling the drawn semi-dry green body on the pottery car and making it reach the required shape and thickness with the billet repair tool. According to different times, the drawing tools used are different. In ancient times, the drawing methods were basically manual billet drawing, but now the electric billet drawing machine is used, so the methods will be different. ");
       })
@@ -34,7 +34,7 @@ $( document ).ready(function() {
          $(".parcours-active").removeClass("parcours-active");
          $(".parc3").addClass("parcours-active");
          $(".timeline-indicator").css("width","33.80%");
-         $("body").css("background","url(../image/3.jpg)");
+         $("body").css("background","url(image/3.jpg)");
          $("main h1").text("Third step: fettling");
          $("main p").text("Fettling, also known as spinning billet, is the process of drawing semi-dry billet in and out of the body with billet repair tools to achieve the required shape and thickness. The newly drawn billet from previous steps is relatively rough and needs good repair. The blank body is placed in the center of the pulley pottery wheel to rotate the turntable to repair the billet and dig the full, so that the thickness of the tire wall is uniform and moderate, and the surface of the billet tire is smooth. Repair the billet according to the shape of the original design or the figure in the brain (creative structure, etc.). The problem that should be paid attention to is that, first of all, it is necessary to feel the thickness of the billet body by hand, and how much mud is expected to be repaired so as not to repair too thin or repair through. Secondly, if the machine speed is appropriate,  it will get better effect, finally, the repaired blank air-dried, air-dried need to be put in a flat place to prevent deformation. This process should wait for the mud billet in semi-dry state. Sometimes the billet is too dry, in order to repair, need to replenish water properly.");
       })

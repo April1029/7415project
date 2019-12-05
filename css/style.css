@@ -13,7 +13,7 @@ body {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -27,7 +27,7 @@ body {
  .masthead {
   position: relative;
   z-index: 99;
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
   margin-right: 10px;
 }
 
@@ -75,7 +75,9 @@ body {
     /*position: absolute;*/
     /*float: left;*/
     margin-left: 1rem;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
+    padding-top: 1rem;
+    color: white;
   }
   .nav-masthead {
     position: relative;

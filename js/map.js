@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic295aSIsImEiOiJjazF1eW45dG8wYmtrM2JwNWJ2NGcze
  
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/soyi/ck23gjp3rfps61dpem51sitxb'
+style: 'mapbox://styles/soyi/ck3qsb2n805pd1cmntqbh66th'
 });
  
 var size = 200;
@@ -21,6 +21,7 @@ onAdd: function() {
 var canvas = document.createElement('canvas');
 canvas.width = this.width;
 canvas.height = this.height;
+canvas.style.zIndex = 99;
 this.context = canvas.getContext('2d');
 },
  
@@ -279,3 +280,36 @@ map.getCanvas().style.cursor = '';
 popup.remove();
 });
 });
+
+// 3. Creating a legend
+// See example tutorial at https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-2/#create-arrays-of-intervals-and-colors
+
+    var layers = [ // an array of the possible values you want to show in your legend
+        'Civic Spaces', // Civic Spaces.png
+        'Community Park', // Community Park.png
+        'Neighborhood Park', // Neighborhood Park.png
+        'Cemetery',
+        'Urban Park',
+        'Regional Park'
+    ];
+
+    var colors = [ // an array of the color values for each legend item
+        '#800000',
+        '#800030',
+        '#800060',
+        '#80006c',
+        '#800090',
+        '#80009c'
+    ];
+
+    // for loop to create individual legend items
+    for (i=0; i<layers.length; i++) {
+        var layer =layers[i]; // name of the current legend item, from the layers array
+        var color =colors[i]; // color value of the current legend item, from the colors array 
+        
+        var itemHTML = "<div><span class='legend-key'></span><span>" + layer + "</span></div>"; // create the HTML for the legend element to be added
+
+        var item = $(itemHTML).appendTo("#legend"); // add the legend item to the legend
+        var legendKey = $(item).find(".legend-key"); // find the legend key (colored circle) for the current item
+        legendKey.css("background", color); // change the background color of the legend key
+    }

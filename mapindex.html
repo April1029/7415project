@@ -1,0 +1,110 @@
+<html>
+
+<head>
+  <title>Resource mapping</title>
+
+  <!-- Link to JQuery library (used for modal) -->  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Link to Mapbox GL JS library --> 
+  <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script> -->
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Link to Mapbox GL JS css stylesheet -->  
+  <!-- <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+  <!-- Add Google Fonts support -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Add FontAwesome support -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to our custom stylesheet -->  
+  <link rel="stylesheet" href="css/mapstyles.css">
+  <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+      <header class="masthead sidebar">
+      <div class="inner">
+        <!-- <h3 class="masthead-brand">China china!</h3> -->
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link " href="index.html">Home</a>
+          <a class="nav-link" href="timeline.html">History</a>
+          <a class="nav-link" href="process.html">Technique</a>
+          <a class="nav-link active" href="#">Mapping</a>
+        </nav>
+      </div>
+    </header>
+  <!-- Map sidebar --> 
+  <div id="sidebar">
+    <div>
+      <h1 class='page-title'>China,china!</h1>
+      <!-- About this map button -->
+      <button id="about" class='button-default'><i class="fas fa-question-circle"></i>&nbsp;Purchase channel </button>
+      <!-- Info window (populated by javascript code from the Mapbox map layers) -->
+      <div id='info-window'>
+        <div>
+          <div id='info-window-body'>
+            
+            <p style="font-family: Comic Sans MS;">Right hand is a mapping of the unique soil resources that contributes to Longquan celadon making, along with water, traffic situations which are quite important in both making process and selling or communicating process. Also, there are several important location with rich celadon making culture and history.
+            Many traditional craftsmanship have always been faced with the embarrassment of art inheritance, or the traditional skills are out of touch, or the inheritance of skills is biased, which more or less causes the regret of traditional craftsmanship in our country. With no exception, Longquan celadon experienced the same situation.
+            To better reflect the cultural value of Longquan celadon, we should not only innovate in inheritance, but also develop in innovation, which is the only way to the development of celadon. Innovation must be superior to the things it refers to, and if this is not achieved, innovation will lose its meaning. Innovation should be reflected in two aspects, one is ideological, the other is technical (artistic). The living space of modern people continues to expand, the thinking is diversified, the aesthetic ability and aesthetic taste are also constantly improved, and the taste of cultural works of art is required to be higher. The thoughts and emotions expressed in celadon works must be novel and unconventional. This requires artists to establish a correct creative concept, go deep into life, be good at observing new things, refine the theme of creation, and create good works with distinctive ideological nature loved by the public.
+            The purpose of this website is to spread the words, let more people understand this unique culture, and also hoping that more people will be interested in inherating and innovating this traditional skill, we look forward to a better tomorrow about the modernization of Longquan celadon.
+
+           </p>
+          </div>
+        </div>
+      </div>
+      <!-- Scrolling chapters (populated by javascript code from the Mapbox map layers) -->
+      <div id="chapters"></div>
+    </div>
+  </div>
+
+  
+  <!-- The map will be added to this div by javascript --> 
+  <div id="map-parent">
+    <div id="map"></div>
+
+    <!-- Map overlay sidebar -->
+    <div id='map-sidebar'>
+      <!-- Layers control (populated by javascript code) -->
+      <div id='layers-control'>
+        <h3>Show/Hide Layers:</h3>
+      </div>
+
+      <!-- color change selector -->
+      <!-- <div id='color-changer'>
+        <div>
+          <label>Bus Stop Color:</label>
+          <div id='swatches'></div>
+        </div>
+      </div> -->
+
+      <!-- Map legend (populated by javascript code) -->
+      <div id='legend'></div>
+
+      <!-- Reset Map button -->
+      <!-- <button id="reset" class='button-default'><i class="fas fa-redo"></i></i>&nbsp;Reset map</button> -->
+    </div>
+  </div>
+
+  <!-- A modal, hidden by default in our css, which provides info about this project when shown -->
+  <div class='modal'>
+    
+    <h2 class='modal-title'>Purchase channel</h2>
+    
+    <div class='modal-body'><p>Here are some links:<br>https://m.tb.cn/h.eDdMiyU?sm=9c6789;<br>https://m.tb.cn/h.ewIfYJa?sm=feec84;<br>https://m.tb.cn/h.eweyHcr?sm=fcb4de</p></div>
+    
+    <button class='close-button'>&times;</button>  <!-- A special "x" character (the multiply sign) used in close buttons -->  
+  </div>
+  <div id="screen"></div> <!-- Black overlay behind the modal -->
+
+</body>
+<!-- Link to our custom javascript, must be placed at the end of the index.html file -->  
+<script src="js/newmap.js"></script>
+</html>

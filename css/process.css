@@ -9,7 +9,7 @@ body {
    padding:0;
    /*height: 100%;*/
    width:100%;
-   background:url(https://fs-cdn.bishuju.com/d/file/mp/4627d75151fd9d25ba6f8b25697a6f7d.jpg);
+   background:url(../image/0.jpg);
    background-size:cover;
    background-repeat: no-repeat;
 }
@@ -52,14 +52,13 @@ p{
    height:auto;
    min-height:10px;
    display:inline-block;
-   /*background-color:rgb(255, 255, 255);*/
-
+   
 }
 .infobox {
    width:226px;
    height:auto;
    min-height:10px;
-   background-color:white;
+   background-color:brown;
    padding:5px;
    border-radius:10px;
    display:inline-block;

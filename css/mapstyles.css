@@ -4,37 +4,37 @@ body {
 }
 
 /* Typography */
-/*body, p {
-    font-family: 'Roboto', sans-serif;
+p {
+    font-family: 'Gill Sans';
     font-weight: 300;
     font-size: 14px;
     line-height: 140%;
     color: #85a7b5;
 }
 
-h1,h2,h3,h4,h5,h6 { 
-    font-family: 'Roboto', sans-serif;
+/*h1,h2,h3,h4,h5,h6 { 
+    font-family: 'Shadows Into Light';
     font-weight: 600;
     font-size: smaller;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
+}*/
 
-h1, h2 {
+/*h1, h2 {
     color: #00394d;
-    background-color: #008796;
+    background-color: #C9C5BA;
     display: inline-block;
     padding: 3px 6px;
-}
+}*/
 
-h3, h4, h5, h6 { color: white; }
+/*h3, h4, h5, h6 { color: white; }*/
 
 a { color: #ffd000; }
-a:hover { color: #f00; }*/
+a:hover { color: #f00; }
 
 /* Buttons */
-/*button {
-    font-family: 'Roboto', sans-serif;
+button {
+    font-family: Comic Sans MS;
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase;
@@ -42,7 +42,7 @@ a:hover { color: #f00; }*/
 }
 
 .button-default {
-    background-color: #ffd000;
+    background-color: #97B1A6;
     border-radius: 0;
     color: #00394d;
     padding: 7px 20px;
@@ -54,17 +54,21 @@ a:hover { color: #f00; }*/
 .button-default:hover {
     background-color: #f00;
 }
-*/
+
 /* Page sections - size and positioning */
 
 #sidebar {
     position: fixed;
     left: 0;
-    width: 30%;
+    width: 20%;
     height: 100vh;
-    background-color: #00394d;
+    background-color: #435860;
     border-right: 1px solid #0d6e91;
     z-index: 1;
+}
+
+.sidebar {
+    /*background-color: #435860;*/
 }
 
 #map-parent {
@@ -72,26 +76,26 @@ a:hover { color: #f00; }*/
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 70%;	/* 100% of viewport width */
+	width: 80%;	/* 100% of viewport width */
 	height: 100vh;	/* 100% of viewport height */
 }
-
-#map { width: 100%; height: 100%; position: absolute;}
+#map { width: 100%; height: 100%; position: absolute; }
 
 #map-sidebar {
     position: absolute;
     right: 0;
     height: 100vh;
-    background:rgba(0, 57, 77, 0.85);
+    background:rgba(0, 0, 0, 0);
     padding: 15px;
     z-index: 1;
+    margin-top: 600px;
     font-size: 10px;
     max-width: 130px;
 }
 
 /* Sidebar Content */
 #sidebar>div { padding: 20px; }
-/*
+
 .page-title {
     font-size: 30px;
     line-height: 125%;
@@ -103,11 +107,11 @@ a:hover { color: #f00; }*/
     height: 100px;
 }
 
-#chapters {
+/*#chapters {
     height: 600px;
     overflow-y: scroll;
-    overflow-x: hidden;
-}
+    overflow-x: hidden;*/
+/*}*/
 
 #chapters>.chapter {
     margin-bottom: 50px;
@@ -115,7 +119,7 @@ a:hover { color: #f00; }*/
 
 #chapters>.chapter>img {
     width: 100%;
-}*/
+}
 
 
 
@@ -123,7 +127,6 @@ a:hover { color: #f00; }*/
 
     #map-sidebar>div { margin-bottom: 30px; }
     #map-sidebar>div:last-child { margin-bottom: 0; }
-    /*
     #color-changer .swatch {
         border-radius: 100%;
         display: block;
@@ -160,7 +163,7 @@ a:hover { color: #f00; }*/
         padding: 10px;
         text-decoration: none;
         text-align: center;
-        background-color: #ccc;
+        background-color: #C9C5BA;
     }
 
     #layers-control a.active {
@@ -174,9 +177,9 @@ a:hover { color: #f00; }*/
         background: #f00;
     }
 
-*/
+
 /* Modal */
-/*#screen {
+#screen {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -188,15 +191,15 @@ a:hover { color: #f00; }*/
 
 .modal {
     display: none;
-    width: 50vw;
-    height: 50vh;
+    width: 30vw;
+    height: 30vh;
     position: absolute;
     margin: auto;
     top: 0;
     bottom:0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: #435860;
     z-index: 2;
     padding: 30px;
 }
@@ -215,11 +218,11 @@ a:hover { color: #f00; }*/
 
 .modal>.close-button:hover {
     color: #bbbbbb !important;
-}*/
+}
 
 
 /* Mapbox popups */
-/*.mapboxgl-popup-content {
+.mapboxgl-popup-content {
     background:rgba(0, 57, 77, 0.7);
     border: 1px solid #0d6e91;
     border-radius: 0;
@@ -241,4 +244,4 @@ a:hover { color: #f00; }*/
 
 
 
-*/
+

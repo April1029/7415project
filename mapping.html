@@ -75,10 +75,31 @@ height: 100vh;
       </div>
     <!-- <main role="main" class="inner cover"> -->
     	<!-- <div class="jumbotron"> -->
+</div>
+</div>
+  <div id="map-parent">
 <div id="map"></div>
+<!-- Map overlay sidebar -->
+    <div id='map-sidebar'>
+      <!-- Layers control (populated by javascript code) -->
+      <div id='layers-control'>
+        <h3>Show/Hide Layers:</h3>
+      </div>
 
-<!-- </div> -->
+      <!-- color change selector -->
+      <div id='color-changer'>
+        <div>
+          <label>Bus Stop Color:</label>
+          <div id='swatches'></div>
+        </div>
+      </div>
 
+      <!-- Map legend (populated by javascript code) -->
+      <div id='legend'></div>
+
+      <!-- Reset Map button -->
+      <button id="reset" class='button-default'><i class="fas fa-redo"></i></i>&nbsp;Reset map</button>
+    </div>
     <!-- </main> -->
 
     <footer class="mastfoot mt-auto">
@@ -88,6 +109,7 @@ height: 100vh;
       </div>
     </footer>
   </div>
+<!-- </div> -->
 
 
   <!-- Bootstrap core JavaScript

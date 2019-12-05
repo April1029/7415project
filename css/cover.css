@@ -11,7 +11,7 @@ html, body {
  * Cover
  */
 .cover-container {
-  background: url('http://image.thepaper.cn/wap/image/27/756/307.jpg');
+  background: url('../image/9.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
